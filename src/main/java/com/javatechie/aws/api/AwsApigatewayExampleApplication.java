@@ -16,8 +16,10 @@ public class AwsApigatewayExampleApplication {
 
     @PostMapping
     public Book addBook(@RequestBody Book book) {
-        books.add(book);
-        return book;
+        Book book2 = book;
+        book2.setName("Roshan "+book.getName());
+        books.add(book2);
+        return book2;
     }
 
     @GetMapping
