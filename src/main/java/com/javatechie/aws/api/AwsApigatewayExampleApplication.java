@@ -25,6 +25,7 @@ public class AwsApigatewayExampleApplication {
         return books;
     }
 
+
     public static void main(String[] args) {
         SpringApplication.run(AwsApigatewayExampleApplication.class, args);
     }
